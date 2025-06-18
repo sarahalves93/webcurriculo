@@ -6,9 +6,13 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, rgba(13, 12, 29, 0.7), rgba(31, 26, 56, 0.7)),
-              url('../img/neon.jpg') no-repeat center center fixed;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+      to right,
+      rgba(13, 12, 29, 0.7),
+      rgba(31, 26, 56, 0.7)
+    ),
+    url("../img/neon.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
   line-height: 1.6;
@@ -17,8 +21,8 @@ body {
 header {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px 40px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-  position: sticky;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  position: static;
   top: 0;
   z-index: 100;
 }
@@ -32,6 +36,7 @@ nav {
 nav h1 {
   font-size: 1.8rem;
   color: #00e0ff;
+  text-transform: capitalize;
 }
 
 nav ul {
@@ -42,9 +47,11 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   font-weight: 500;
+  text-transform: uppercase;
   transition: color 0.3s;
+  font-size: small;
 }
 
 nav a:hover {
@@ -65,6 +72,7 @@ nav a:hover {
   margin-bottom: 20px;
   color: #ff6ec7;
   text-align: center;
+  text-transform: capitalize;
 }
 
 footer {
@@ -138,65 +146,13 @@ footer {
 
 .fill {
   height: 100%;
-  background: linear-gradient(90deg, #00e0ff, #eb601a);
+  background: linear-gradient(90deg, #00e0ff, #ef15e0);
   border-radius: 8px;
 }
 
 .destaque {
   color: #f1f65c;
   font-weight: 600;
-}
-
-.interesses-card {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 16px;
-  padding: 40px 30px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.interesses-header h2 {
-  color: #ff6ec7;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.interesses-header i {
-  margin-right: 10px;
-}
-
-.interesses-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.interesse {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #c9d1d9;
-}
-
-.interesse i {
-  font-size: 28px;
-  border: 2px solid #00e0ff;
-  color: #00e0ff;
-  border-radius: 50%;
-  padding: 16px;
-  margin-bottom: 10px;
-  transition: background 0.3s, color 0.3s;
-}
-
-.interesse i:hover {
-  background-color: #ff6ec7;
-  color: #0d1117;
-}
-
-.interesse span {
-  font-size: 1rem;
-  margin-top: 4px;
 }
 
 #contato a {
@@ -221,33 +177,10 @@ footer {
   padding: 20px 0;
 }
 
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  background-color: #00e0ff;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .timeline-item {
   padding: 20px 40px;
-  position: relative;
-  width: 50%;
-}
-
-.timeline-item::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #00e0ff;
-  border: 3px solid #fff;
-  top: 24px;
-  border-radius: 50%;
-  z-index: 1;
+  position: static;
+  width: 100%;
 }
 
 .timeline-item.left::after {
@@ -276,7 +209,7 @@ footer {
 .timeline-content h3 {
   margin-bottom: 5px;
   font-size: 1.2rem;
-  color: #00e0ff;
+  color: #58a6ff;
 }
 
 .timeline-content p {
@@ -524,7 +457,6 @@ footer {
   background-color: #ff6ec7;
 }
 
-
 .menu-toggle {
   display: none;
   background: none;
@@ -541,34 +473,35 @@ footer {
 
   nav ul {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
-    top: 70px;
-    right: 0;
+    flex-wrap: wrap;
+    top: 65px;
+    right: 20px;
     padding: 20px;
-    width: 220px;
+    width: 400px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
-
-  nav ul.open {
-    display: flex;
-  }
-
-  nav h1 {
-    font-size: 1.4rem;
-  }
 }
 
+nav ul.open {
+  display: flex;
+}
+
+nav h1 {
+  font-size: 1.4rem;
+}
 
 .section {
   margin-top: 100px;
   padding-bottom: 80px;
 }
 
-h1, h2 {
+h1,
+h2 {
   letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
