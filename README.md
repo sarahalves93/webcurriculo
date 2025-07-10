@@ -18,7 +18,7 @@ Publicar meu primeiro projeto web
 
 🔍 Como Acessar
 O projeto está hospedado no GitHub Pages e pode ser acessado através do link:
-[https://www.sarahalves.dev.br]
+https://www.sarahalves.dev.br
 
 📚 Aprendizados
 Estrutura básica de um documento HTML
